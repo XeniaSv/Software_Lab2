@@ -100,8 +100,38 @@ public class UnitTest2{
             Assert.Equal(excepted, result);
         }
 
+        /// <summary>
+        /// Output taking the translate grade in radian test
+        /// </summary>
+        [Fact]
+        public void TestMethodOutputTranslateInRadian()
+        {
+            double result = Calculator.TranslateInRadian(60);
+            double excepted = 60 * Math.PI/180;
+            Assert.Equal(excepted, result);
+        }
 
+        /// <summary>
+        /// Output taking the translate radian in grade test
+        /// </summary>
+        [Fact]
+        public void TestMethodOutputTranslateInGrade()
+        {
+            double result = Calculator.TranslateInGrade(1);
+            double excepted = 1 * 180/Math.PI;
+            Assert.Equal(excepted, result);
+        }
 
+        /// <summary>
+        /// Output taking the exponential test
+        /// </summary>
+        [Fact]
+        public void TestMethodOutputExp()
+        {
+            double result = Calculator.Exp(1);
+            double excepted = Math.Exp(1);
+            Assert.Equal(excepted, result);
+        }
 
 }
 
