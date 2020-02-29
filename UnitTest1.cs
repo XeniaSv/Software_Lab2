@@ -138,7 +138,38 @@ public class UnitTest1{
 
             }
         }
+        
+        /// <summary>
+        /// Input taking the translate grade in radian test
+        /// </summary>
+        [Fact]
+        public void TestMethodInputTranslateInRadian()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                menu.Commands("60 grad");
+                string excepted = $"{60 * Math.PI/180}{Environment.NewLine}";
+                Assert.Equal(excepted, sw.ToString());
 
+            }
+        }
+
+        /// <summary>
+        /// Input taking the translate radian in grade test
+        /// </summary>
+        [Fact]
+        public void TestMethodInputTranslateInGrade()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                menu.Commands("1 rad");
+                string excepted = $"{1 * 180/Math.PI}{Environment.NewLine}";
+                Assert.Equal(excepted, sw.ToString());
+
+            }
+        }
 
 
     
