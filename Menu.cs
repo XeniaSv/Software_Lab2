@@ -77,7 +77,12 @@ namespace Lab1
                      if (command[1] == "rad") 
                     {
                         Console.WriteLine(Calculator.TranslateInGrade(double.Parse(command[0])));
-                    }                
+                    } 
+
+                    if (command[0] == "exp")
+                    {
+                        Console.WriteLine(Calculator.Exp(double.Parse(command[1])));
+                    }
                                             
                 }
                 catch (FormatException ex) { Console.WriteLine(ex); }
@@ -147,7 +152,10 @@ namespace Lab1
                 {
                     Console.WriteLine(Calculator.TranslateInGrade(double.Parse(command[0])));
                 }  
-                
+                if (command[0] == "exp")
+                {
+                    Console.WriteLine(Calculator.Exp(double.Parse(command[1])));
+                }
             }
             catch (FormatException ex) { Console.WriteLine(ex); }
             catch (IndexOutOfRangeException ex) { Console.WriteLine(ex); }
