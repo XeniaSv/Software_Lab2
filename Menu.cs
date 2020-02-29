@@ -67,7 +67,17 @@ namespace Lab1
                     if (command[1] == "!")
                     {
                         Console.WriteLine(Calculator.Factorial(double.Parse(command[0])));
-                    }                    
+                    }
+
+                    if (command[1] == "grad") 
+                    {
+                        Console.WriteLine(Calculator.TranslateInRadian(double.Parse(command[0])));
+                    } 
+
+                     if (command[1] == "rad") 
+                    {
+                        Console.WriteLine(Calculator.TranslateInGrade(double.Parse(command[0])));
+                    }                
                                             
                 }
                 catch (FormatException ex) { Console.WriteLine(ex); }
@@ -126,6 +136,16 @@ namespace Lab1
                 if (command[1] == "!")
                 {
                     Console.WriteLine(Calculator.Factorial(double.Parse(command[0])));
+                }  
+
+                if (command[1] == "grad") 
+                {
+                    Console.WriteLine(Calculator.TranslateInRadian(double.Parse(command[0])));
+                } 
+
+                if (command[1] == "rad") 
+                {
+                    Console.WriteLine(Calculator.TranslateInGrade(double.Parse(command[0])));
                 }  
                 
             }

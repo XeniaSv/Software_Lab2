@@ -132,5 +132,25 @@ namespace Lab1
             return res;
         }
 
+        /// <summary>
+        /// Function translate grade in radian
+        /// </summary>
+        /// <param name="grade">enter number</param>
+        /// <returns>Radians</returns>
+        public double TranslateInRadian(double grade){
+            res = grade * Math.PI/180;
+            return res;
+        }
+
+        /// <summary>
+        /// Function translate radian in grade
+        /// </summary>
+        /// <param name="radian">enter number</param>
+        /// <returns>Grades</returns>
+        public double TranslateInGrade(double radian){
+            res = radian * 180/Math.PI;
+            return res;
+        }
+
     }
 }
