@@ -122,6 +122,17 @@ public class UnitTest2{
             Assert.Equal(excepted, result);
         }
 
+        /// <summary>
+        /// Output taking the exponential test
+        /// </summary>
+        [Fact]
+        public void TestMethodOutputExp()
+        {
+            double result = Calculator.Exp(1);
+            double excepted = Math.Exp(1);
+            Assert.Equal(excepted, result);
+        }
+
 }
 
 

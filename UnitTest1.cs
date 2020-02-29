@@ -171,6 +171,22 @@ public class UnitTest1{
             }
         }
 
+        /// <summary>
+        /// Input taking the exponential test
+        /// </summary>
+        [Fact]
+        public void TestMethodInputExp()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                menu.Commands("exp 1");
+                string excepted = $"{Math.Exp(1)}{Environment.NewLine}";
+                Assert.Equal(excepted, sw.ToString());
+
+            }
+        }
+
 
     
 }
