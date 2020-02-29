@@ -1,0 +1,109 @@
+using System;
+namespace Lab1
+{
+    public class Calculator
+    {
+        /// <summary>
+        /// Variable storing the last operation
+        /// </summary>
+        private double res;
+
+        /// <summary>
+        /// Method returns the result of the operation of addition two numbers
+        /// </summary>
+        /// <param name="value1">
+        /// First number
+        /// </param>
+        /// <param name="value2">
+        /// Second number
+        /// </param>
+        /// <returns></returns>
+        public double Addition(double value1, double value2)
+        {
+            res = value1 + value2;
+            return res;
+        }
+
+        /// <summary>
+        /// Method returns the result of the operation of subtracting two numbers
+        /// </summary>
+        /// <param name="value1">
+        /// First number
+        /// </param>
+        /// <param name="value2">
+        /// Second number
+        /// </param>
+        /// <returns></returns>
+        public double Subtraction(double value1, double value2)
+        {
+            res = value1 - value2;
+            return res;
+        }
+
+        /// <summary>
+        /// Method returns the result of the operation of multiplication two numbers
+        /// </summary>
+        /// <param name="value1">
+        /// First number
+        /// </param>
+        /// <param name="value2">
+        /// Second number
+        /// </param>
+        /// <returns></returns>
+        public double Multiplication(double value1, double value2)
+        {
+            res = value1 * value2;
+            return res;
+        }
+
+
+        /// <summary>
+        /// Method returns the result of the operation of division two numbers
+        /// </summary>
+        /// <param name="value1">
+        /// First number
+        /// </param>
+        /// <param name="value2">
+        /// Second number
+        /// </param>
+        /// <returns></returns>
+        public double Division(double value1, double value2)
+        {
+            res = value1 / value2;
+            return res;
+        }
+
+        /// <summary>
+        /// Method returning the result of raising the number of degree
+        /// </summary>
+        /// <param name="value">
+        /// Exponential number
+        /// </param>
+        /// <param name="degree">
+        /// Degree
+        /// </param>
+        /// <returns></returns>
+        public double Degree(double value, double degree)
+        {
+            res = Math.Pow(value, degree);
+            return res;
+        }
+
+        /// <summary>
+        /// Method returning the result of taking the root of a number
+        /// </summary>
+        /// <param name="value">
+        /// Number under the root
+        /// </param>
+        /// <param name="degree">
+        /// Root degree
+        /// </param>
+        /// <returns></returns>
+        public double Root(double value, double degree)
+        {
+            res = Math.Pow(value, degree);
+            return res;
+        }
+
+    }
+}

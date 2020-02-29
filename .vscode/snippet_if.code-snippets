@@ -1,0 +1,11 @@
+{
+	"snippet_if": {
+		"prefix": "user_if",
+		"body": [
+		  "if (true){",
+		  "\t$1",
+		  "}"
+		],
+		"description": "snippet_if"
+	  }
+}

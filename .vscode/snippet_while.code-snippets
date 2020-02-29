@@ -1,0 +1,11 @@
+{
+	"snippet_while": {
+		"prefix": "user_while",
+		"body": [
+		  "while (true){",
+		  "\t$1",
+		  "}"
+		],
+		"description": "snippet_while"
+	  }
+}
