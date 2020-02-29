@@ -152,5 +152,15 @@ namespace Lab1
             return res;
         }
 
+        /// <summary>
+        /// Exponential function
+        /// </summary>
+        /// <param name="value">enter number</param>
+        /// <returns>Exp of enter number</returns>
+        public double Exp(double value){
+            res = Math.Exp(value);
+            return res;
+        }
+
     }
 }
