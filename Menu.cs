@@ -16,68 +16,65 @@ namespace Lab1
         /// </summary>
         public void Commands()
         {
-            bool flag = true;
             do
             {
                 Console.WriteLine("Enter command");
                 string com = Console.ReadLine();
-                string[] command = Regex.Split(com, @"\s+"); //x знак y, sqrt x, pow x степ
+                string[] command = Regex.Split(com.Trim(), @"\s+"); //x знак y, sqrt x, pow x степ
 
                 try
                 {
-                    if (command[0] == "stop")
+                    if (com.Trim() == "stop")
                     {
-                        flag = false;
+                        break;
                     }
-                    else
+            
+                    if (command[1] == "+")
                     {
-                        if (command[1] == "+")
-                        {
-                            Console.WriteLine(Calculator.Addition(double.Parse(command[0]), double.Parse(command[2])));
-                        }
-                        else
-                        {
-                            if (command[1] == "-")
-                            {
-                                Console.WriteLine(Calculator.Subtraction(double.Parse(command[0]), double.Parse(command[2])));
-                            }
-                            else
-                            {
-                                if (command[1] == "*")
-                                {
-                                    Console.WriteLine(Calculator.Multiplication(double.Parse(command[0]), double.Parse(command[2])));
-                                }
-                                else
-                                {
-                                    if (command[1] == "/")
-                                    {
-                                        Console.WriteLine(Calculator.Division(double.Parse(command[0]), double.Parse(command[2])));
-                                    }
-                                    else
-                                    {
-                                        if (command[0] == "pow")
-                                        {
-                                            Console.WriteLine(Calculator.Degree(double.Parse(command[1]), double.Parse(command[2])));
-                                        }
-                                        else
-                                        {
-                                            if (command[0] == "sqrt")
-                                            {
-                                                Console.WriteLine(Calculator.Root(double.Parse(command[1]), double.Parse(command[2])));
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                        Console.WriteLine(Calculator.Addition(double.Parse(command[0]), double.Parse(command[2])));
+                    }
+                    
+                    if (command[1] == "-")
+                    {
+                        Console.WriteLine(Calculator.Subtraction(double.Parse(command[0]), double.Parse(command[2])));
+                    }
+            
+                    if (command[1] == "*")
+                    {
+                        Console.WriteLine(Calculator.Multiplication(double.Parse(command[0]), double.Parse(command[2])));
+                    }
+                               
+                    if (command[1] == "/")
+                    {
+                        Console.WriteLine(Calculator.Division(double.Parse(command[0]), double.Parse(command[2])));
+                    }
+                                   
+                    if (command[0] == "pow")
+                    {
+                        Console.WriteLine(Calculator.Degree(double.Parse(command[1]), double.Parse(command[2])));
+                    }
+                                        
+                    if (command[0] == "sqrt")
+                    {
+                        Console.WriteLine(Calculator.Root(double.Parse(command[1]), double.Parse(command[2])));
+                    }
+                                           
+                    if (command[0] == "abs")
+                    {
+                        Console.WriteLine(Calculator.Abs(double.Parse(command[1])));
+                    }
 
-                    }
+                    if (command[1] == "!")
+                    {
+                        Console.WriteLine(Calculator.Factorial(double.Parse(command[0])));
+                    }                    
+                                            
                 }
                 catch (FormatException ex) { Console.WriteLine(ex); }
                 catch (IndexOutOfRangeException ex) { Console.WriteLine(ex); }
                 catch (Exception ex) { Console.WriteLine(ex); }
 
-            } while (flag);
+            } while (true);
         }
 
         /// <summary>
@@ -91,52 +88,46 @@ namespace Lab1
 
             try
             {
-                if (command[0] == "stop")
+                if (command[1] == "+")
                 {
+                    Console.WriteLine(Calculator.Addition(double.Parse(command[0]), double.Parse(command[2])));
                 }
-                else
+                    
+                if (command[1] == "-")
                 {
-                    if (command[1] == "+")
-                    {
-                        Console.WriteLine(Calculator.Addition(double.Parse(command[0]), double.Parse(command[2])));
-                    }
-                    else
-                    {
-                        if (command[1] == "-")
-                        {
-                            Console.WriteLine(Calculator.Subtraction(double.Parse(command[0]), double.Parse(command[2])));
-                        }
-                        else
-                        {
-                            if (command[1] == "*")
-                            {
-                                Console.WriteLine(Calculator.Multiplication(double.Parse(command[0]), double.Parse(command[2])));
-                            }
-                            else
-                            {
-                                if (command[1] == "/")
-                                {
-                                    Console.WriteLine(Calculator.Division(double.Parse(command[0]), double.Parse(command[2])));
-                                }
-                                else
-                                {
-                                    if (command[0] == "pow")
-                                    {
-                                        Console.WriteLine(Calculator.Degree(double.Parse(command[1]), double.Parse(command[2])));
-                                    }
-                                    else
-                                    {
-                                        if (command[0] == "sqrt")
-                                        {
-                                            Console.WriteLine(Calculator.Root(double.Parse(command[1]), double.Parse(command[2])));
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    Console.WriteLine(Calculator.Subtraction(double.Parse(command[0]), double.Parse(command[2])));
+                }
+                       
+                if (command[1] == "*")
+                {
+                    Console.WriteLine(Calculator.Multiplication(double.Parse(command[0]), double.Parse(command[2])));
+                }
+                          
+                if (command[1] == "/")
+                {
+                    Console.WriteLine(Calculator.Division(double.Parse(command[0]), double.Parse(command[2])));
+                }
+                                
+                if (command[0] == "pow")
+                {
+                    Console.WriteLine(Calculator.Degree(double.Parse(command[1]), double.Parse(command[2])));
+                }
+                                   
+                if (command[0] == "sqrt")
+                {
+                    Console.WriteLine(Calculator.Root(double.Parse(command[1]), double.Parse(command[2])));
+                }
 
+                if (command[0] == "abs")
+                {
+                    Console.WriteLine(Calculator.Abs(double.Parse(command[1])));
                 }
+
+                if (command[1] == "!")
+                {
+                    Console.WriteLine(Calculator.Factorial(double.Parse(command[0])));
+                }  
+                
             }
             catch (FormatException ex) { Console.WriteLine(ex); }
             catch (IndexOutOfRangeException ex) { Console.WriteLine(ex); }

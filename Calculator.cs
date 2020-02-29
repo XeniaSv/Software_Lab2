@@ -105,5 +105,32 @@ namespace Lab1
             return res;
         }
 
+        /// <summary>
+        /// Abs function
+        /// </summary>
+        /// <param name="value">enter number</param>
+        /// <returns>Abs of enter number</returns>
+        public double Abs(double value){
+            res = Math.Abs(value);
+            return res;
+        }
+
+
+        /// <summary>
+        /// Factorial function
+        /// </summary>
+        /// <param name="value">enter number</param>
+        /// <returns>Factorial of enter number</returns>
+        public double Factorial(double value){
+            if (value == 0){
+                return res = 0;
+            }
+            if (value == 1){
+                return res = 1;
+            }
+            res = value * Factorial(value -1);
+            return res;
+        }
+
     }
 }

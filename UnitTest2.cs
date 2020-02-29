@@ -75,6 +75,34 @@ public class UnitTest2{
             double excepted = 4;
             Assert.Equal(excepted, result);
         }
+
+        
+        /// <summary>
+        /// Output taking the abs of a number test
+        /// </summary>
+        [Fact]
+        public void TestMethodOutputAbs()
+        {
+            double result = Calculator.Abs(-16);
+            double excepted = 16;
+            Assert.Equal(excepted, result);
+        }
+
+        
+        /// <summary>
+        /// Output taking the factorial of a number test
+        /// </summary>
+        [Fact]
+        public void TestMethodOutputFactorial()
+        {
+            double result = Calculator.Factorial(3);
+            double excepted = 6;
+            Assert.Equal(excepted, result);
+        }
+
+
+
+
 }
 
 

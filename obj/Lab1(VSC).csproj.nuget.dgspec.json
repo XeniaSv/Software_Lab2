@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab1(VSC)\\Lab1(VSC).csproj": {}
+    "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab2\\Lab1(VSC).csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab1(VSC)\\Lab1(VSC).csproj": {
+    "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab2\\Lab1(VSC).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab1(VSC)\\Lab1(VSC).csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab2\\Lab1(VSC).csproj",
         "projectName": "Lab1(VSC)",
-        "projectPath": "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab1(VSC)\\Lab1(VSC).csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab2\\Lab1(VSC).csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab1(VSC)\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\4 sem\\ПО\\Lab2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
