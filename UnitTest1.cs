@@ -106,5 +106,40 @@ public class UnitTest1{
 
             }
         }
+
+        /// <summary>
+        /// Input taking the abs of a number test
+        /// </summary>
+        [Fact]
+        public void TestMethodInputAbs()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                menu.Commands("abs -16");
+                string excepted = $"16{Environment.NewLine}";
+                Assert.Equal(excepted, sw.ToString());
+
+            }
+        }
+
+        /// <summary>
+        /// Input taking the factorial of a number test
+        /// </summary>
+        [Fact]
+        public void TestMethodInputFactorial()
+        {
+            using (StringWriter sw = new StringWriter())
+            {
+                Console.SetOut(sw);
+                menu.Commands("3 !");
+                string excepted = $"6{Environment.NewLine}";
+                Assert.Equal(excepted, sw.ToString());
+
+            }
+        }
+
+
+
     
 }
