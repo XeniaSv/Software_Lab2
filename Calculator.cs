@@ -7,6 +7,7 @@ namespace Lab1
         /// Variable storing the last operation
         /// </summary>
         private double res;
+        private byte res1;
 
         /// <summary>
         /// Method returns the result of the operation of addition two numbers
@@ -18,10 +19,14 @@ namespace Lab1
         /// Second number
         /// </param>
         /// <returns></returns>
-        public double Addition(double value1, double value2)
-        {
+        public double Addition(double value1, double value2){
             res = value1 + value2;
             return res;
+        }
+        public byte Addition(byte value1, byte value2){
+            res1 = value1;
+            res1 += value2;
+            return res1;
         }
 
         /// <summary>
@@ -38,6 +43,11 @@ namespace Lab1
         {
             res = value1 - value2;
             return res;
+        }
+        public byte Subtraction(byte value1, byte value2){
+            res1 = value1;
+            res1 -= value2;
+            return res1;
         }
 
         /// <summary>
@@ -56,6 +66,12 @@ namespace Lab1
             return res;
         }
 
+        public byte Multiplication(byte value1, byte value2){
+            res1 = value1;
+            res1 *= value2;
+            return res1;
+        }
+
 
         /// <summary>
         /// Method returns the result of the operation of division two numbers
@@ -71,6 +87,12 @@ namespace Lab1
         {
             res = value1 / value2;
             return res;
+        }
+
+        public byte Division(byte value1, byte value2){
+            res1 = value1;
+            res1 /= value2;
+            return res1;
         }
 
         /// <summary>
