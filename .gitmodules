@@ -1,0 +1,6 @@
+[submodule "MiniBinaryParser"]
+	path = MiniBinaryParser
+	url = https://github.com/tozevv/MiniBinaryParser
+[submodule "SOFTWARE_Submodule_Lab2"]
+	path = SOFTWARE_Submodule_Lab2
+	url = https://github.com/Tulesha/SOFTWARE_Submodule_Lab2
